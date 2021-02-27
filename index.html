@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="myCss.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+
+
+    <title>Nishi Parameshwara</title>
+</head>
+
+<body style="overflow:hidden">
+    <header>
+        <div class = "container1">
+            <div class = "logo">
+                <a href="index.html">
+                    <h1 id = "name">Nishi Parameshwara</h1>
+                </a>
+            </div>
+            <div class = "nav-bar">
+                <nav>
+                    <ul>
+                        <li><a class="active" href="index.html">resume</li>
+                        <li><a href="https://linkedin.com/in/niship">linkedIn</li>
+                        <li><a href="https://github.com/nishi-p">portfolio</li>
+                        <li style="font-size: 20px; font-family: 'Redressed', cursive;"><a href = "#"><i class="fa fa-envelope" style="font-size:50px; color:white; margin-right: 10px"></i><span>np9447@rit.edu</span></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class = "slider-area">
+        <div class="mySlides"><h3 id = "text-slider"> 
+        Hi! <br> I am currently a Computer Science Masters student studying at Rochester Institute of Technology. <br> Feel free to poke around to learn more about my professional activities!</h3></div>
+        <img class="mySlides" src="img1.jpg">
+        <img class="mySlides" src="img2.jpg">
+        <img class="mySlides" src="img3.jpg"> <!--style = "opacity: 0.5"-->
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"; }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 3000); //Change image every 2 seconds
+        }
+</script>
+</body>
+</html>
